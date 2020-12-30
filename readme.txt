@@ -1,0 +1,1 @@
+Matrix Multiplication with Mpi and OpenMp plus scripts fot testing time in order to analyze both strong nd weak scalability.
