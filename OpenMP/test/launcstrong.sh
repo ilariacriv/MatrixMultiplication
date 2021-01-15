@@ -13,8 +13,10 @@
 #execution line
 for i in 1 2 4 8 12 16 24 32 40 48
 do
-  	for j in {1..3}
+  	for j in {1..10}
         do
           	srun ./mat $i $1
         done
 done
+
+

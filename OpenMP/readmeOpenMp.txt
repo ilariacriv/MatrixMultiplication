@@ -1,19 +1,19 @@
 NxN Matrix multiplication in OpenMp
 
-Given dim=N
+Given dim the matrix dimension
 
 Compile: gcc -fopenmp matrixopenMP.c -o mat
-Execute with SLURM: sbatch ./launcher_openmp.sh <number of nodes> <matrix dim>
+Execute with SLURM: sbatch ./launcher_openmp.sh <number of process> <dim>
 
 Tests: 
 
 Execute: ./tester.sh <dim>
 
 This script will schedule all the test for weak and strong scalability.
-dim should be the dimension to use for the strong scalability.
+dim should be the dimension you want to test for the strong scalability.
 
-Each time is calculated 3 times, you should modify the scripts with more iteration in order to have higher accuracy.
+Each test is calculated 10 times, you should calculate the average 
 
-Time calculation for strong scalbility will be in: strong.out
-Time calculation for weak scalbility will be in: weak.out
-Time calculation for sequential resolution will be in: seq.out
+Time calculation output for strong scalbility will be in: strong.out
+Time calculation output for weak scalbility will be in: weak.out
+Time calculation output for sequential resolution will be in: seq.out

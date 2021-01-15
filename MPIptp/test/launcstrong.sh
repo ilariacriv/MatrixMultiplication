@@ -10,7 +10,9 @@
 module load autoload intelmpi
 
 #execution line
-for j in {1..3}
+for j in {1..10}
         do
 	       srun ./mat $1 >> strong.out
         done
+
+        

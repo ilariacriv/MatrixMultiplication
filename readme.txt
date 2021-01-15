@@ -1,1 +1,7 @@
-Matrix Multiplication with Mpi and OpenMp plus scripts for testing time in order to analyze both strong nd weak scalability.
+Square Matrix Multiplication with:
+- Mpi point to point (send/receive) 
+- Mpi collectives (Scatter/gather)
+- OpenMp 
+
+
+Plus scripts to test both strong and weak scalability.

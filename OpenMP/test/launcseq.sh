@@ -14,8 +14,9 @@
 for i in  1 2 4 8 16 32 
 do
   	n=$(($i*100))
-        for j in {1..3}
+        for j in {1..10}
         do
           	srun ./mat 1 $n
         done
 done
+
